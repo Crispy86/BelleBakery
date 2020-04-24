@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rebecca's Resources: @ViewBag.Title</title>
+
+    <environment names=" Development">
+        <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+    <environment names="Staging,Production">
+        <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <h1 class="navbar-brand"><i class="fa fa-paint-brush"> Welcome to Rebecca's Resources</i></h1>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#theMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="theMenu" class="navbar-collapse-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a class="nav-link" asp-controller="App" asp-action="Index">Home</a></li>
+                    <li class="navbar-item"><a class="nav-link" asp-controller="App" asp-action="Contact">Contact</a></li>
+                    <li class="navbar-item"><a class="nav-link" asp-controller="App" asp-action="About">About</a></li>
+                    <li class="navbar-item"><a class="nav-link" asp-controller="App" asp-action="Shop">Shop</a></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="navbar-item"><a class="nav-link" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                    }
+                    else
+                    {
+                        <li class="navbar-item"><a class="nav-link" asp-controller="Account" asp-action="Login">Login</a></li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <h2 class="text-center">@ViewBag.Title</h2>
+        @RenderBody()
+    </section>
+    <footer class="container"><div class="text-center">Copyright 2020 RR Resource's </div></footer>
+
+    <environment names=" Development">
+        <script src="~/node_modules/jquery/dist/jquery.js"></script>
+        <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/js/index.js"></script>
+    </environment>
+    <environment names=" Staging,Production">
+        <script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"
+                asp-fallback-src="~/node_modules/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="//ajax.aspnetcdn.com/ajax/bootstrap/4.4.1/bootstrap.min.js"
+                asp-fallback-src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/dist/bellebakery.min.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("scripts", false)
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "colours": {
+    "Favorite": "blue"
+  },
+  "ConnectionStrings": {
+    "BelleBakeryConnectionString": "server=LAPTOP1515\\MSSQLSERVER01;Database=BelleBakeryDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  },
+  "Tokens": {
+    "Key": "a;lkjasdf;lkajsd;flkjas ;dflkja sd",
+    "Issuer": "localhost",
+    "Audience": "users"
+  }
+
+}
