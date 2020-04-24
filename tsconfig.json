@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     //"outDir": "./dist/out-tsc",
-    "outDir": "./wwwroot/ts",
+    //"outDir": "./wwwroot/ts",
+    "outDir": "./wwwroot/clientapp/dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,

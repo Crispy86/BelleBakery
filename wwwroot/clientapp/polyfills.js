@@ -3033,7 +3033,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\porterc\Documents\Chris Folder\RRProject\RebeccaResources\ClientApp\polyfills.ts */"./ClientApp/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\porterc\Documents\Chris Folder\BelleBakery\ClientApp\polyfills.ts */"./ClientApp/polyfills.ts");
 
 
 /***/ })
