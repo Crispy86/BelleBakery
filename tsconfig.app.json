@@ -9,6 +9,6 @@
     "ClientApp/polyfills.ts"
   ],
   "include": [
-    "ClientApp/**/*.d.ts"
+    "ClientApp/**/*.ts"
   ]
 }
