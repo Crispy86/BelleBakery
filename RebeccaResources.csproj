@@ -38,14 +38,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="node_modules\**"
-          CopyToPublishDirectory="Always"/>
+    <None Include="node_modules\**" CopyToPublishDirectory="Always" />
   </ItemGroup>
   
   
   
   <Target Name="MyPublishScripts" BeforeTargets="BeforePublish">
-    <Exec Command="npm install" />
+    <!--<Exec Command="npm install" />-->
     <Exec Command="gulp" />
     <Exec Command="ng build" />
   </Target>
