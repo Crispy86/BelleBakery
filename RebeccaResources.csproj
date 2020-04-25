@@ -7,10 +7,15 @@
 
   <ItemGroup>
     <Compile Remove="%2a%2a\**" />
+    <Compile Remove="wwwroot\clientapp\out-tsc\**" />
     <Content Remove="%2a%2a\**" />
+    <Content Remove="wwwroot\clientapp\out-tsc\**" />
     <EmbeddedResource Remove="%2a%2a\**" />
+    <EmbeddedResource Remove="wwwroot\clientapp\out-tsc\**" />
     <None Remove="%2a%2a\**" />
+    <None Remove="wwwroot\clientapp\out-tsc\**" />
     <TypeScriptCompile Remove="%2a%2a\**" />
+    <TypeScriptCompile Remove="wwwroot\clientapp\out-tsc\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,40 +36,40 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\app.component.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\app.component.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\app.module.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\app.module.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\checkout\checkout.component.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\checkout\checkout.component.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\login\login.component.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\login\login.component.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shared\dataService.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shared\dataService.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shared\order.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shared\order.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shared\product.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shared\product.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shop\cart.component.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shop\cart.component.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shop\productList.component.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shop\productList.component.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shop\shop.component.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\app\shop\shop.component.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\environments\environment.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\environments\environment.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\environments\environment.prod.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\environments\environment.prod.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\main.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\main.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\polyfills.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\polyfills.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\test.js" />
-    <None Include="wwwroot\clientapp\out-tsc\ClientApp\test.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\wwwroot\ts\main.js" />
-    <None Include="wwwroot\clientapp\out-tsc\wwwroot\ts\main.js.map" />
-    <None Include="wwwroot\clientapp\out-tsc\wwwroot\ts\storecustomer.js" />
-    <None Include="wwwroot\clientapp\out-tsc\wwwroot\ts\storecustomer.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\app.component.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\app.component.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\app.module.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\app.module.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\checkout\checkout.component.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\checkout\checkout.component.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\login\login.component.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\login\login.component.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shared\dataService.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shared\dataService.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shared\order.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shared\order.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shared\product.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shared\product.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shop\cart.component.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shop\cart.component.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shop\productList.component.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shop\productList.component.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shop\shop.component.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\app\shop\shop.component.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\environments\environment.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\environments\environment.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\environments\environment.prod.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\environments\environment.prod.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\main.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\main.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\polyfills.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\polyfills.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\test.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\ClientApp\test.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\wwwroot\ts\main.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\wwwroot\ts\main.js.map" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\wwwroot\ts\storecustomer.js" />
+    <None Include="wwwroot\clientapp\dist\out-tsc\wwwroot\ts\storecustomer.js.map" />
   </ItemGroup>
 
   <ItemGroup>

@@ -887,7 +887,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\porterc\Documents\Chris Folder\BelleBakery\ClientApp\main.ts */"./ClientApp/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\porterc\Documents\Chris Folder\BabyB\ClientApp\main.ts */"./ClientApp/main.ts");
 
 
 /***/ })

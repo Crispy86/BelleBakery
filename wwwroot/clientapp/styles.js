@@ -329,7 +329,7 @@ module.exports = function (list, options) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\porterc\Documents\Chris Folder\BelleBakery\ClientApp\styles.css */"./ClientApp/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\porterc\Documents\Chris Folder\BabyB\ClientApp\styles.css */"./ClientApp/styles.css");
 
 
 /***/ })
